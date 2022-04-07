@@ -2726,5 +2726,8 @@ button,
     text-align: left;
   }
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=main.css.map */
