@@ -13,7 +13,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/images/icono%20casco.png">
 
 </head>
-<body class="is-preload">
+<body class="is-preload" onload="document.body.style.opacity='1'">
 <div id="page-wrapper">
 
     <!-- Header -->
@@ -25,6 +25,9 @@
         <!-- Nav -->
         <nav id="nav">
             <ul>
+                <li><a target="_blank" href="https://wa.me/526563838560?text=Hola%2C%20estoy%20interesado%20en%20contratar%20sus%20servicios."><img style="width: 25px; height: 25px;" src="assets/images/logo%20whats.png" alt=""></a></li>
+                <li><a href="#"><img style="width: 12px; height: 25px;" src="assets/images/logo%20face.png" alt=""></a></li>
+                <li><span class="font-bold">|</span></li>
                 <li class="current"><a href="index.html">Home</a></li>
                 <li><a href="#banner">Sobre nosotros</a></li>
                 <li><a href="#nuestros-servicios">Nuestros servicios</a></li>
@@ -33,6 +36,10 @@
                     <a class="btn lightbox-220958682316867 cursor-pointer" style="margin-top: 16px">
                         Contacto
                     </a>
+                </li>
+                <li><span class="font-bold">|</span></li>
+                <li>
+                    <a href="tel:6563838560">656 383 8560</a>
                 </li>
             </ul>
         </nav>
@@ -50,17 +57,29 @@
     <!-- Gigantic Heading -->
     <section class="wrapper style2">
         <div class="container">
-            <header class="major">
-                <h2>Sobre nosotros</h2>
-                <p>
-                    Desde el año 2003, PSI ha ayudado a clientes en todo el país mediante una gama de
-                    servicios a la medida. Tras años en la industria hemos ampliado nuestra oferta para
-                    garantizar a nuestros clientes siempre la mejor experiencia. Este éxito nos ha permitido
-                    llegar a otras latitudes y en cada una fortalecer nuestra reputación. Nuestra ventaja radica
-                    en el empeño que ponemos en desarrollar relaciones y obtener conocimientos de fuentes
-                    reconocidas en la industria. Póngase en contacto y conozca más.
-                </p>
-            </header>
+            <div class="row">
+                <div class="col-6 col-12-mobile">
+                    <header class="major">
+                        <h2>Sobre nosotros</h2>
+                        <p>
+                            Desde el año 2003, PSI ha ayudado a clientes en todo el país mediante una gama de
+                            servicios a la medida. Tras años en la industria hemos ampliado nuestra oferta para
+                            garantizar a nuestros clientes siempre la mejor experiencia. Este éxito nos ha permitido
+                            llegar a otras latitudes y en cada una fortalecer nuestra reputación. Nuestra ventaja radica
+                            en el empeño que ponemos en desarrollar relaciones y obtener conocimientos de fuentes
+                            reconocidas en la industria. Póngase en contacto y conozca más.
+                        </p>
+                    </header>
+                </div>
+                <div class="col-6 col-12-mobile mb-5">
+                    <video style="width: 100%" autoplay controls muted>
+                        <source src="assets/videos/psi_namce.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+
+                    </video>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -72,31 +91,31 @@
             </header>
             <div class="row gtr-200">
                 <section class="col-2 col-12-mobile col-12-narrower">
-                    <div class="box highlight text-center flex-column">
+                    <div class="box text-center flex-column">
                         <img src="assets/images/logo%20servicios.png" alt="">
                         <h3>Instalación eléctrica</h3>
                     </div>
                 </section>
                 <section class="col-3 col-12-mobile col-12-narrower">
-                    <div class="box highlight text-center flex-column">
+                    <div class="box text-center flex-column">
                         <img src="assets/images/logo%20servicios.png" alt="">
                         <h3>Instalación hidráulica</h3>
                     </div>
                 </section>
                 <section class="col-2 col-12-mobile col-12-narrower">
-                    <div class="box highlight text-center flex-column">
+                    <div class="box text-center flex-column">
                         <img src="assets/images/logo%20servicios.png" alt="">
                         <h3>Instalación electromecánica</h3>
                     </div>
                 </section>
                 <section class="col-3 col-12-mobile col-12-narrower">
-                    <div class="box highlight text-center flex-column">
+                    <div class="box text-center flex-column">
                         <img src="assets/images/logo%20servicios.png" alt="">
                         <h3>Construcción en general</h3>
                     </div>
                 </section>
                 <section class="col-2 col-12-mobile col-12-narrower">
-                    <div class="box highlight text-center flex-column">
+                    <div class="box text-center flex-column">
                         <img src="assets/images/logo%20servicios.png" alt="">
                         <h3>HVAC</h3>
                     </div>
@@ -162,8 +181,8 @@
                     <div class="box post">
                         <a href="#" class="image left"><img src="assets/images/7.jpg" alt=""/></a>
                         <div class="inner">
-                            <h3>Reemplazo de cableado</h3>
-                            <p class="text-accent font-bold">SUCURSAL EN LAS MISIONES</p>
+                            <h3>Controladores</h3>
+                            <p class="text-accent font-bold">EDIFICIO CANTABRIA.</p>
                         </div>
                     </div>
                 </section>
@@ -259,16 +278,6 @@
                         <div class="inner">
                             <h3>Suministro e instalación de grúa viajera</h3>
                             <p class="text-accent font-bold">COMMSCOPE</p>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-6 col-12-narrower">
-                    <div class="box post">
-                        <a href="#" class="image left">
-                            <img src="assets/images/93.jpg" alt=""/>
-                        </a>
-                        <div class="inner">
-                            <h3>Movimiento de tinas para el tratamiento de materiales.</h3>
                         </div>
                     </div>
                 </section>
@@ -441,6 +450,47 @@
                     </div>
                 </section>
             </div>
+
+            <div class="row mb-5">
+                <section class="col-6 col-12-narrower">
+                    <div class="box post">
+                        <a href="#" class="image left"><img src="assets/images/9995.jpg" alt=""/></a>
+                        <div class="inner">
+                            <h3>Cambio de sistema de
+                                extracción.</h3>
+                            <p class="text-accent font-bold">SOFAMEX</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-6 col-12-narrower">
+                    <div class="box post">
+                        <a href="#" class="image left"><img src="assets/images/9996.jpg" alt=""/></a>
+                        <div class="inner">
+                            <h3>Cambio de unida paquete.</h3>
+                            <p class="text-accent font-bold">BANAMEX</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-6 col-12-narrower">
+                    <div class="box post">
+                        <a href="#" class="image left"><img src="assets/images/9997.jpg" alt=""/></a>
+                        <div class="inner">
+                            <h3>Sistema HVAC.</h3>
+                            <p class="text-accent font-bold">GIMNASIO</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-6 col-12-narrower">
+                    <div class="box post">
+                        <a href="#" class="image left"><img src="assets/images/9998.jpg" alt=""/></a>
+                        <div class="inner">
+                            <h3>Sistema de extracción.</h3>
+                            <p class="text-accent font-bold">CUARTO DE PINTURA</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
             <div class="row mb-5">
 
                 <section class="col-6 col-12-narrower">
@@ -510,55 +560,58 @@
                 <h2>NUESTROS CLIENTES</h2>
             </header>
             <div class="row justify-center text-center">
-                <div class="col-2">
+                <div class="col-2 col-4-mobile">
                     <a href="#" class="image left text-white"><img src="assets/images/logo%20a.jpg" alt=""/> DANVOL</a>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-4-mobile">
                     <a href="#" class="image left text-white"><img src="assets/images/logo%20b.jpg" alt=""/> AMBU</a>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-4-mobile">
                     <a href="#" class="image left text-white"><img src="assets/images/logo%20c.jpg" alt=""/> CONSTRUTODO</a>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-4-mobile">
                     <a href="#" class="image left text-white"><img src="assets/images/logo%20d.jpg" alt=""/> JLL</a>
                 </div>
-                <div class="col-2">
-                    <a href="#" class="image left text-white"><img src="assets/images/logo%20e.jpg" alt=""/> ISS FACILITY SERVICES</a>
+                <div class="col-2 col-4-mobile">
+                    <a href="#" class="image left text-white"><img src="assets/images/logo%20e.jpg" alt=""/> ISS
+                        FACILITY SERVICES</a>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-4-mobile">
                     <a href="#" class="image left text-white"><img src="assets/images/logo%20f.jpg" alt=""/> SCOTIABANK</a>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-4-mobile">
                     <a href="#" class="image left text-white"><img src="assets/images/logo%20g.jpg" alt=""/> SENSA</a>
                 </div>
-                <div class="col-2">
-                    <a href="#" class="image left text-white"><img src="assets/images/logo%20h.jpg" alt=""/> TE CONNECTIVITY</a>
+                <div class="col-2 col-4-mobile">
+                    <a href="#" class="image left text-white"><img src="assets/images/logo%20h.jpg" alt=""/> TE
+                        CONNECTIVITY</a>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-4-mobile">
                     <a href="#" class="image left text-white"><img src="assets/images/logo%20i.jpg" alt=""/> CGC</a>
                 </div>
-                <div class="col-2">
-                    <a href="#" class="image left text-white"><img src="assets/images/logo%20j.jpg" alt=""/> I AM ARQUITECTO</a>
+                <div class="col-2 col-4-mobile">
+                    <a href="#" class="image left text-white"><img src="assets/images/logo%20j.jpg" alt=""/> I AM
+                        ARQUITECTO</a>
                 </div>
             </div>
         </div>
     </section>
 
-<!--    <section id="nuestros-productos" class="wrapper style2">-->
-<!--        <div class="container">-->
-<!--            <header class="major">-->
-<!--                <h2>NUESTROS PRODUCTOS</h2>-->
-<!--            </header>-->
-<!--            <div class="row mb-5">-->
-<!--                <section class="col-12 text-center">-->
-<!--                    <div class="box post">-->
-<!--                            <h3>Descarga el catálogo de productos en PDF</h3>-->
-<!--                            <button>AQUÍ</button>-->
-<!--                    </div>-->
-<!--                </section>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
+    <!--    <section id="nuestros-productos" class="wrapper style2">-->
+    <!--        <div class="container">-->
+    <!--            <header class="major">-->
+    <!--                <h2>NUESTROS PRODUCTOS</h2>-->
+    <!--            </header>-->
+    <!--            <div class="row mb-5">-->
+    <!--                <section class="col-12 text-center">-->
+    <!--                    <div class="box post">-->
+    <!--                            <h3>Descarga el catálogo de productos en PDF</h3>-->
+    <!--                            <button>AQUÍ</button>-->
+    <!--                    </div>-->
+    <!--                </section>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </section>-->
     <!-- CTA -->
     <!--				<section id="cta" class="wrapper style3">-->
     <!--					<div class="container">-->

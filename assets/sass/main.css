@@ -31,6 +31,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 ol, ul {
@@ -1706,10 +1708,10 @@ label {
   text-align: center;
   cursor: default;
   background-color: #ff616f;
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-  background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-  background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
+  background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
   color: #fff;
   border-radius: 100%;
   display: inline-block;
@@ -1909,10 +1911,10 @@ table.default th {
 }
 table.default thead {
   background-color: #555555;
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-  background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-  background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
+  background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
   color: #fff;
 }
 /* Button */
@@ -1929,10 +1931,10 @@ button,
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-  background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-  background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
+  background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
   background-color: #ff616f;
   border-radius: 8px;
   border: 0;
@@ -2034,18 +2036,23 @@ button.small,
 /* Header */
 #header {
   text-align: center;
-  padding: 3em 0 0 0;
+  padding: 1rem 0.5rem;
   background-color: #000000;
   background-image: url("../images/bg02.png"), url("../images/bg02.png"), url("../images/bg01.png");
   background-position: top left, top left, top left;
   background-size: 100% 6em, 100% 6em, auto;
   background-repeat: no-repeat, no-repeat, repeat;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10001;
 }
 #header img {
   height: 80px;
 }
 #header h1 {
-  padding: 0 0 2.75em 0;
+  padding: 0.5rem 0;
   margin: 0;
 }
 #header h1 a {
@@ -2057,10 +2064,10 @@ button.small,
 #nav {
   cursor: default;
   background-color: #333;
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-  background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-  background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../images/bg01.png");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../images/bg01.png");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../images/bg01.png");
+  background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../images/bg01.png");
   padding: 0;
 }
 #nav:after {
@@ -2069,7 +2076,7 @@ button.small,
   width: 100%;
   height: 0.75em;
   background-color: #ff616f;
-  background-image: url("images/bg01.png");
+  background-image: url("../images/bg01.png");
 }
 #nav > ul {
   margin: 0;
@@ -2109,7 +2116,7 @@ button.small,
   left: 50%;
   margin-left: -0.375em;
   background-color: #ff616f;
-  background-image: url("images/bg01.png");
+  background-image: url("../images/bg01.png");
 }
 #nav > ul > li.current a {
   color: #fff;
@@ -2124,12 +2131,16 @@ button.small,
   display: none;
 }
 
+#page-wrapper {
+  padding-top: 250px;
+}
+
 /* Dropotron */
 .dropotron {
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("images/bg01.png");
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("images/bg01.png");
-  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("images/bg01.png");
-  background-image: linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("images/bg01.png");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("../images/bg01.png");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("../images/bg01.png");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("../images/bg01.png");
+  background-image: linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("../images/bg01.png");
   background-color: #333;
   border-radius: 8px;
   color: #fff;
@@ -2218,10 +2229,10 @@ button.small,
 }
 .wrapper.style3 {
   background-color: #ff616f;
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-  background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-  background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
+  background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("../images/bg01.png");
   color: #fff;
 }
 .wrapper.style3 .button {
@@ -2486,16 +2497,15 @@ button.small,
     width: 100%;
     z-index: 10001;
     background-color: #333;
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-    background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-    background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-    height: 44px;
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../images/bg01.png");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../images/bg01.png");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../images/bg01.png");
+    background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../images/bg01.png");
     line-height: 44px;
     box-shadow: 0 4px 0 0 #ff616f;
   }
   #titleBar .logo--img {
-    height: 40px;
+    height: 55px;
   }
   #titleBar .title {
     display: block;
@@ -2548,10 +2558,10 @@ button.small,
   #navPanel {
     background-color: #1f1f1f;
     box-shadow: inset -1px 0 3px 0 rgba(0, 0, 0, 0.5);
-    background-image: -moz-linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.15)), url("images/bg01.png");
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.15)), url("images/bg01.png");
-    background-image: -ms-linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.15)), url("images/bg01.png");
-    background-image: linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.15)), url("images/bg01.png");
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.15)), url("../images/bg01.png");
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.15)), url("../images/bg01.png");
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.15)), url("../images/bg01.png");
+    background-image: linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.15)), url("../images/bg01.png");
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
