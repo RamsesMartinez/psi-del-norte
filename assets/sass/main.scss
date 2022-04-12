@@ -1342,7 +1342,7 @@ button,
     @include vendor('backface-visibility', 'hidden');
     @include vendor('transition', 'transform #{_duration(navPanel)} ease');
     display: block;
-    height: 44px;
+    height: 65px;
     left: 0;
     position: fixed;
     top: 0;
@@ -1354,6 +1354,7 @@ button,
     box-shadow: 0 4px 0 0 _palette(accent, bg);
     .logo--img {
       height: 55px;
+      margin-top: 5px;
     }
     .title {
       display: block;
@@ -1378,14 +1379,15 @@ button,
       top: 0;
       width: 80px;
       z-index: 2;
+      font-size: 1.5rem;
 
       &:before {
         content: '\f0c9';
         display: block;
-        height: 44px;
+        height: 60px;
         line-height: inherit;
         text-align: center;
-        width: 44px;
+        width: 60px;
         color: #fff;
         opacity: 0.5;
       }

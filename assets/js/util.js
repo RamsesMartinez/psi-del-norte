@@ -16,7 +16,7 @@
 				indent = Math.max(0, $this.parents('li').length - 1),
 				href = $this.attr('href'),
 				target = $this.attr('target');
-
+			console.log($this);
 			b.push(
 				'<a ' +
 					'class="link depth-' + indent + '"' +
@@ -24,7 +24,7 @@
 					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
 				'>' +
 					'<span class="indent-' + indent + '"></span>' +
-					$this.text() +
+					$this[0].innerHTML +
 				'</a>'
 			);
 

@@ -2490,7 +2490,7 @@ button.small,
     -ms-transition: -ms-transform 0.5s ease;
     transition: transform 0.5s ease;
     display: block;
-    height: 44px;
+    height: 65px;
     left: 0;
     position: fixed;
     top: 0;
@@ -2506,6 +2506,7 @@ button.small,
   }
   #titleBar .logo--img {
     height: 55px;
+    margin-top: 5px;
   }
   #titleBar .title {
     display: block;
@@ -2528,6 +2529,7 @@ button.small,
     top: 0;
     width: 80px;
     z-index: 2;
+    font-size: 1.5rem;
   }
   #titleBar .toggle:before {
     -moz-osx-font-smoothing: grayscale;
@@ -2544,10 +2546,10 @@ button.small,
   #titleBar .toggle:before {
     content: "\f0c9";
     display: block;
-    height: 44px;
+    height: 60px;
     line-height: inherit;
     text-align: center;
-    width: 44px;
+    width: 60px;
     color: #fff;
     opacity: 0.5;
   }
